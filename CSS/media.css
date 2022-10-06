@@ -1,0 +1,133 @@
+/*start variables*/
+:root{
+    --main-color:#14a9c6;
+    --secendary-color: #c5c3c3;
+}
+/*end variables*//*start global rules*/
+@media(max-width:1199px){
+    /*start landing*/
+    /*start header*/
+    .landing .header .container .links i{
+        display: block;
+    }
+    .landing .header .container ul{
+        display: none;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        right: 0px;
+        min-width: 130px;
+        top: 40px;
+        background-color: rgb(21, 81, 92);
+        transition: 0.6s;
+        z-index: 100;
+    }
+    .landing .header .container .links:hover ul{
+        display: block;
+    }
+    .landing .header .container ul li{
+        padding: 10px;
+    }
+    .landing .header .container ul li:hover{
+        padding-left:40px ;
+        opacity: unset;
+    }
+    .landing .header hr{
+        display: none;
+    }
+    /*end header*/
+    /*start text*/
+    .landing .text{
+        width: 100%;
+        text-align: center;
+        top: 60%;
+    }
+    .landing .text h1{
+        margin: auto;
+        padding-top: 10px;
+    }
+    .landing .text p{
+        margin: auto;
+    }
+    /*end text*/
+    /*end landing*/
+    /*start gap-1*/
+    .gap-1 .text{
+        width: 100%;
+        right: unset;
+        text-align: center
+    }
+    /*end gap-1*/
+}
+/*smaller devices*/
+@media(max-width:992px){
+    /*start services*/
+    /*start elements*/
+    .services .container .element {
+        text-align: center;
+    }
+    /*end services/*
+    /*end elements*/
+    /*start about*/
+    .about .container:not(#not-this){
+        flex-direction: column;
+    }
+    /*end about*/
+    /*start gap-3*/
+    .gap-3 .container {
+        flex-direction: column;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    /*start gap-3*/
+
+}
+/*smallest devices*/
+/*start protfolio*/
+/*start img-container*/
+@media(max-width:760px){
+    /*start protfolio*/
+/*start img-container*/
+    .protfolio .img-container .element:nth-child(8),
+    .protfolio .img-container .element:nth-child(7),
+    .protfolio .img-container .element:nth-child(6),
+    .protfolio .img-container .element:nth-child(5){
+        display: none;
+    }
+/*end protfolio*/
+/*end img-container*/
+/*start*contact*/
+.contact .container{
+    flex-direction: column;
+}
+.contact .container .text{
+    order: 1;
+    text-align:center;
+}
+.contact .container .form{
+    order: 2;
+}
+.contact .container .text h4{
+    margin-bottom: 20px;
+
+}
+.contact .container .text p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+/*end*contact*/
+/*start footer*/
+.footer .container hr{
+    display: none;
+}
+/*end footer*/
+}
+@media(max-width:450px){
+    .gap-3 .container .form{
+        width: 300px;
+    }
+    .gap-3 .container p{
+    width: 300px;
+    }
+}
