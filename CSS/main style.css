@@ -451,6 +451,7 @@ flex-basis: 70%;
 }
 .contact .container .form textarea{
     height: 200px;
+    resize: none;
 }
 .contact .container .form input:last-of-type{
     background-color: var(--main-color);
